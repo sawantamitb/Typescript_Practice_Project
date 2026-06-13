@@ -39,18 +39,44 @@ function nestedifcondition() {
 
 function switchcase() {
     console.log("Switch Case");
-    let a = 230;
-    console.log("Switch Case:"+a);
-    switch (a) {
-        case 5:
-            console.log("a is 5");
+    let day = 3;
+    let dayName: string;
+    console.log("Switch Case:"+day);
+    switch (day) {
+        case 1:
+            console.log("Day is Monday");
+            dayName = "Monday";
             break;
-        case 10:
-            console.log("a is 10");
+        case 2:
+            console.log("Day is Tuesday");
+            dayName = "Tuesday";
+            break;
+        case 3:
+            console.log("Day is Wednesday");
+            dayName = "Wednesday";
+            break;
+        case 4:
+            console.log("Day is Thursday");
+            dayName = "Thursday";
+            break;
+        case 5:
+            console.log("Day is Friday");
+            dayName = "Friday";
+            break;
+        case 6:
+            console.log("Day is Saturday");
+            dayName = "Saturday";
+            break;
+        case 7:
+            console.log("Day is Sunday");
+            dayName = "Sunday";
             break;
         default:
-            console.log("a is not 5 or 10");
+            console.log("Invalid day");
+            dayName = "Invalid day";
     }
+    console.log(`Day Name is: ${dayName}`);
+    console.log("Day Name is: "+dayName);
     console.log("************************************");
 };
 
